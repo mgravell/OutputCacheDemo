@@ -7,7 +7,8 @@ builder.Services.AddOutputCache(options => {
     // optional: named output-cache profiles
 });
 builder.Services.AddStackExchangeRedisOutputCache(options => {
-    options.Configuration = "172.17.63.233:6379";
+    // your configuration here
+    options.Configuration = "127.0.0.1:6379";
 });
 var app = builder.Build();
 // add routes
